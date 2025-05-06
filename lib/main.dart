@@ -1,11 +1,13 @@
+import 'package:deleonrutas/Clipoval.dart';
+import 'package:deleonrutas/Material.dart';
 import 'package:flutter/material.dart';
-import 'package:deleonrutas/Pagina_uno.dart';
-import 'package:deleonrutas/Pagina_dos.dart';
-import 'package:deleonrutas/Pagina_tres.dart';
-import 'package:deleonrutas/Pagina_cuatro.dart';
-import 'package:deleonrutas/Pagina_cinco.dart';
-import 'package:deleonrutas/Pagina_seis.dart';
-import 'package:deleonrutas/Pagina_siete.dart';
+import 'package:deleonrutas/Index.dart';
+import 'package:deleonrutas/Pageview.dart';
+import 'package:deleonrutas/AppBar.dart';
+import 'package:deleonrutas/FloatingActionButton.dart';
+import 'package:deleonrutas/ChoiceChip.dart';
+import 'package:deleonrutas/Checkboxlist.dart';
+import 'package:deleonrutas/Pageroute.dart';
 
 void main() => runApp(MiRutasApp());
 
@@ -19,13 +21,15 @@ class MiRutasApp extends StatelessWidget {
       title: "Entre Paginas Routes",
       initialRoute: '/',
       routes: {
-        '/': (context) => const PantallaUno(),
-        '/pantalla2': (context) => const PantallaDos(),
-        '/pantalla3': (context) => const PantallaTres(),
-        '/pantalla4': (context) => const PantallaCuatro(),
-        '/pantalla5': (context) => const PantallaCinco(),
-        '/pantalla6': (context) => const PantallaSeis(),
-        '/pantalla7': (context) => const PantallaSiete(),
+        '/': (context) => const Index(),
+        '/appbar': (context) => const AppBarra(),
+        '/pageview': (context) => VerPagina(),
+        '/floatingactionbutton': (context) => BotonAccionFlotante(),
+        '/clipoval': (context) => OvalClip(),
+        '/material': (context) => MaterialJaja(),
+        '/choicechip': (context) => ChipChoice(),
+        '/checkboxlist': (context) => ListaCheck(),
+        '/pageroute': (context) => RutaPagina()
       },
     );
   }

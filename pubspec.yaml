@@ -20,7 +20,7 @@ flutter:
   uses-material-design: true
   assets:
    - assets/icon/
-  #  - images/a_dot_ham.jpeg
+   - assets/images/marvel_heroes/
   # fonts:
   #   - family: Schyler
   #     fonts:

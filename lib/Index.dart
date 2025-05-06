@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class PantallaUno extends StatelessWidget {
-  const PantallaUno({Key? key}) : super(key: key);
+class Index extends StatelessWidget {
+  const Index({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
           title: const Text(
-            "Pantalla 1",
+            "Index",
             style: TextStyle(
                 color: Colors.white, fontSize: 35, fontWeight: FontWeight.bold),
           ),
@@ -20,49 +20,65 @@ class PantallaUno extends StatelessWidget {
             Center(
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/pantalla2');
+                  Navigator.pushNamed(context, '/appbar');
                 },
-                child: const Text("Ver Pantalla 2"),
+                child: const Text("App Bar"),
               ),
             ),
             Center(
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/pantalla3');
+                  Navigator.pushNamed(context, '/pageview');
                 },
-                child: const Text("Ver Pantalla 3"),
+                child: const Text("Page View"),
               ),
             ),
             Center(
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/pantalla4');
+                  Navigator.pushNamed(context, '/floatingactionbutton');
                 },
-                child: const Text("Ver Pantalla 4"),
+                child: const Text("Floating Action Button"),
               ),
             ),
             Center(
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/pantalla5');
+                  Navigator.pushNamed(context, '/clipoval');
                 },
-                child: const Text("Ver Pantalla 5"),
+                child: const Text("Clip Oval"),
               ),
             ),
             Center(
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/pantalla6');
+                  Navigator.pushNamed(context, '/material');
                 },
-                child: const Text("Ver Pantalla 6"),
+                child: const Text("Material"),
               ),
             ),
             Center(
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/pantalla7');
+                  Navigator.pushNamed(context, '/choicechip');
                 },
-                child: const Text("Ver Pantalla 7"),
+                child: const Text("Choice Chip"),
+              ),
+            ),
+            Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/checkboxlist');
+                },
+                child: const Text("Check Box List Tile"),
+              ),
+            ),
+            Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/pageroute');
+                },
+                child: const Text("Page Route Builder"),
               ),
             ),
           ],
